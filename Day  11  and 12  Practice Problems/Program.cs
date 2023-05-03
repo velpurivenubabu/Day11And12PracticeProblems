@@ -16,6 +16,11 @@
                     int number=Convert.ToInt32(Console.ReadLine());
                     TringlePattern.GetPattern(number);
                     break;
+                case 2:
+                    Console.WriteLine("Please enter number of rows you want to print");
+                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    RectangularPattern.GetRectanglePattern(number1);
+                    break;
             }
         }
     }
