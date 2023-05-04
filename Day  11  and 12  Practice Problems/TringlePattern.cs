@@ -13,6 +13,7 @@ namespace Day__11__and_12__Practice_Problems
           
             for (int i = 0; i < number; i++)
             {
+                string term = '*' + " ";
                 string pattern = new string('*', (number - i));
                 Console.WriteLine(pattern);
             }   
