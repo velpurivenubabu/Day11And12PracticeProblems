@@ -8,12 +8,12 @@
             Console.WriteLine("Please Select any below Option");
             Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List");
             int Option=Convert.ToInt32(Console.ReadLine());
-            switch(Option)
+            switch (Option)
             {
-                
+
                 case 1:
                     Console.WriteLine("Please enter number of rows you want to print");
-                    int number=Convert.ToInt32(Console.ReadLine());
+                    int number = Convert.ToInt32(Console.ReadLine());
                     TringlePattern.GetPattern(number);
                     break;
                 case 2:
@@ -26,7 +26,12 @@
                     string string1 = Console.ReadLine();
                     Reverse_Each_Word_in_Sentence.GetEachWordReverse(string1);
                     break;
-            }
+                case 4:
+                    Console.WriteLine("Please type the sentence witch you want to reverse");
+                    string string2 = Console.ReadLine();
+                    SumOfDigits.GetSumOfDigits(string2);
+                    break;
+            }  
         }
     }
 }
