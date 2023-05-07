@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Hello, Welcome to Practice Problems!");
             Console.WriteLine("Please Select any below Option");
-            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List");
+            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List\n4.SumOfDigits\n5.FirstLetterCapital");
             int Option=Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
@@ -27,9 +27,14 @@
                     Reverse_Each_Word_in_Sentence.GetEachWordReverse(string1);
                     break;
                 case 4:
-                    Console.WriteLine("Please type the sentence witch you want to reverse");
+                    Console.WriteLine("Please type the Number witch you want to Sum of digits");
                     string string2 = Console.ReadLine();
                     SumOfDigits.GetSumOfDigits(string2);
+                    break;
+                case 5:
+                    Console.WriteLine("Please type the sentence witch you want to Make as First Letter Capital");
+                    string string3 = Console.ReadLine();
+                    FirstLetterCapital.FirstLetter(string3);
                     break;
             }  
         }
