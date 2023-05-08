@@ -1,4 +1,7 @@
-﻿namespace Day__11__and_12__Practice_Problems
+﻿using System;
+using System.Globalization;
+
+namespace Day__11__and_12__Practice_Problems
 {
     internal class Program
     {
@@ -35,6 +38,12 @@
                     Console.WriteLine("Please type the sentence witch you want to Make as First Letter Capital");
                     string string3 = Console.ReadLine();
                     FirstLetterCapital.FirstLetter(string3);
+                    break;
+                case 6:
+                    Console.WriteLine("Please Enter the Numbers Randomly With Sapace");
+                    string string4= Console.ReadLine();
+                    string[] arry1 = string4.Split(" ");
+                    SumofMinimumNumbers.GetSumOfTwoMinNumbers(arry1);
                     break;
             }  
         }
