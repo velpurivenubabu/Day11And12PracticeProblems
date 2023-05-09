@@ -30,11 +30,14 @@ namespace Day__11__and_12__Practice_Problems
 
                 }
             }
+            int count = 0;
 
             foreach (string result in duplicates)
             {
+                count++;
                 Console.WriteLine(result);
             }
+            Console.WriteLine(count);
     }   }
 }
 
