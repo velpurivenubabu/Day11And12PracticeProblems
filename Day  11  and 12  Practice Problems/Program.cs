@@ -9,7 +9,7 @@ namespace Day__11__and_12__Practice_Problems
         {
             Console.WriteLine("Hello, Welcome to Practice Problems!");
             Console.WriteLine("Please Select any below Option");
-            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List\n4.SumOfDigits\n5.FirstLetterCapital\n6.SumOfTwoMinimalNumbers\n7.GetDupicates");
+            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List\n4.SumOfDigits\n5.FirstLetterCapital\n6.SumOfTwoMinimalNumbers\n7.GetDupicates\n8.Find All Unique Elements In the Sentence");
             int Option=Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
@@ -50,6 +50,12 @@ namespace Day__11__and_12__Practice_Problems
                     string string5 = Console.ReadLine();
                     string[] arry2 = string5.Split(" ");
                     TotalNumberOfDuplecatesInASentenance.GetDuplicates(arry2);
+                    break;
+                case 8:
+                    Console.WriteLine("Please Enter the Sentenance");
+                    string string6 = Console.ReadLine();
+                    string[] arry3 = string6.Split(" ");
+                    AllUniqueElementsInaList.GetAllUniqueElements(arry3);
                     break;
             }  
         }
