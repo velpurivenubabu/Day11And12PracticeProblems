@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Immutable;
 using System.Globalization;
 
 namespace Day__11__and_12__Practice_Problems
@@ -9,7 +10,7 @@ namespace Day__11__and_12__Practice_Problems
         {
             Console.WriteLine("Hello, Welcome to Practice Problems!");
             Console.WriteLine("Please Select any below Option");
-            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List\n4.SumOfDigits\n5.FirstLetterCapital\n6.SumOfTwoMinimalNumbers\n7.GetDupicates\n8.Find All Unique Elements In the Sentence");
+            Console.WriteLine("1.Inverted Tringle Pattern\n2.Rectangular Pattern\n3.Reverse Each Word in the List\n4.SumOfDigits\n5.FirstLetterCapital\n6.SumOfTwoMinimalNumbers\n7.GetDupicates\n8.Find All Unique Elements In the Sentence\n9.Find Frequence of Given Elements In a list");
             int Option=Convert.ToInt32(Console.ReadLine());
             switch (Option)
             {
@@ -56,6 +57,13 @@ namespace Day__11__and_12__Practice_Problems
                     string string6 = Console.ReadLine();
                     string[] arry3 = string6.Split(" ");
                     AllUniqueElementsInaList.GetAllUniqueElements(arry3);
+                    break;
+                case 9:
+                    Console.WriteLine("Please Enter the Sentenance");
+                    string string7 = Console.ReadLine();
+                    string[] arry4 = string7.Split(" ");
+                    
+                    FrequencyOfEachElementOfAnArray.GetFrequencyOfEachElement(arry4);
                     break;
             }  
         }
