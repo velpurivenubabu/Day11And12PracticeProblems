@@ -14,14 +14,10 @@ namespace Day__11__and_12__Practice_Problems
             string rec = "";
             foreach (char letter in string1) {
                 //Console.WriteLine(letter);
-                if(letter ==' ')
-                {
+                
                     rec = letter + rec;
-                }
-                else
-                {
-                    rec = letter + rec;
-                }
+                
+                
             }
             Console.WriteLine(rec);
         }
