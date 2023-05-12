@@ -12,32 +12,19 @@ namespace Day__11__and_12__Practice_Problems
         public static void GetFrequencyOfEachElement(string[] array)
         {
 
-            for (int i = 0; i < array.Length; i++)
-            {
-                var x = array[i];
-                var j = i;
-                while (j > 0 && array[j - 1].CompareTo(x) > 0)
-                {
-                    array[j] = array[j - 1];
-                    j = j - 1;
-                }
-                array[j] = x;
-            }
             Dictionary<string,int> My_dict1 = new Dictionary<string, int>();
-            int count = 0;
+            
             foreach (string str in array)
             {
                 //Console.WriteLine(str);
                 if (My_dict1.ContainsKey(str))
                 {
-                    count++;
-
-                    My_dict1[str] = count;
+                    My_dict1[str]++;
                 }
                else
                 {
-                    count = 1;
-                    My_dict1.Add(str, count);
+                    
+                    My_dict1.Add(str, 1);
                     
                     
                 }
